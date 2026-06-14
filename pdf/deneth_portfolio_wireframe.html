@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<style>
+    @page {
+        size: A4 landscape;
+        margin: 10mm;
+    }
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #0d1117;
+        color: #c9d1d9;
+        margin: 0;
+        padding: 0;
+        font-size: 10pt;
+    }
+    .container {
+        border: 2px solid #30363d;
+        border-radius: 8px;
+        padding: 15px;
+        background-color: #161b22;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #30363d;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    .logo {
+        font-family: monospace;
+        color: #58a6ff;
+        font-weight: bold;
+        font-size: 14pt;
+    }
+    .nav-links {
+        display: flex;
+        gap: 15px;
+        font-size: 9pt;
+    }
+    .nav-item { color: #8b949e; text-transform: uppercase; font-weight: 600; }
+    .nav-item.active { color: #58a6ff; border-bottom: 2px solid #58a6ff; padding-bottom: 2px; }
+    
+    .hero-section {
+        text-align: center;
+        padding: 30px 10px;
+        background: radial-gradient(circle at center, #1f293d 0%, #161b22 100%);
+        border-radius: 6px;
+        border: 1px solid #21262d;
+        margin-bottom: 20px;
+    }
+    .hero-title {
+        font-size: 24pt;
+        margin: 0 0 10px 0;
+        color: #f0f6fc;
+    }
+    .hero-title span {
+        color: #58a6ff;
+    }
+    .hero-subtitle {
+        color: #8b949e;
+        max-width: 600px;
+        margin: 0 auto 20px auto;
+        font-size: 10.5pt;
+        line-height: 1.4;
+    }
+    .btn-group {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+    .btn {
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 9pt;
+        text-transform: uppercase;
+    }
+    .btn-primary { background-color: #1f6feb; color: white; border: none; }
+    .btn-secondary { background-color: transparent; color: #c9d1d9; border: 1px solid #30363d; }
+    
+    .timeline-title {
+        font-size: 11pt;
+        color: #58a6ff;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .timeline-grid {
+        display: flex;
+        gap: 10px;
+    }
+    .day-card {
+        flex: 1;
+        background-color: #0d1117;
+        border: 1px solid #30363d;
+        border-radius: 4px;
+        padding: 8px;
+    }
+    .day-num {
+        font-weight: bold;
+        color: #f0f6fc;
+        font-size: 8.5pt;
+        border-bottom: 1px solid #21262d;
+        padding-bottom: 3px;
+        margin-bottom: 5px;
+    }
+    .day-card ul {
+        margin: 0;
+        padding-left: 12px;
+        font-size: 8pt;
+        color: #8b949e;
+    }
+    .day-card li { margin-bottom: 3px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Navbar Wireframe -->
+    <div class="navbar">
+        <div class="logo">&lt;DENETH.K /&gt;</div>
+        <div class="nav-links">
+            <div class="nav-item active">Home</div>
+            <div class="nav-item">Projects</div>
+            <div class="nav-item">Skills</div>
+            <div class="nav-item">Contact</div>
+        </div>
+    </div>
+
+    <!-- Hero UI Sample Wireframe -->
+    <div class="hero-section">
+        <h1 class="hero-title">Hi, I'm <span>Deneth Kawishka</span></h1>
+        <p class="hero-subtitle">
+            A Full-Stack Developer crafting high-performance backend REST APIs with Python & robust, reactive frontend user interfaces using Angular ecosystem ecosystems.
+        </p>
+        <div class="btn-group">
+            <div class="btn btn-primary">Explore Projects</div>
+            <div class="btn btn-secondary">Get In Touch</div>
+        </div>
+    </div>
+
+    <!-- Integrated Week 1 Timeline -->
+    <div class="timeline-title">🛠️ Week 1 Action Plan: Building the Backend Engine</div>
+    <div class="timeline-grid">
+        <div class="day-card">
+            <div class="day-num">Day 1 (June 01)</div>
+            <ul><li>Setup Python Environment</li><li>Design DB Schema (Users, Projects)</li></ul>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 2 (June 02)</div>
+            <ul><li>Configure SQLite DB</li><li>Create SQLAlchemy Models</li></ul>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 3 (June 03)</div>
+            <ul><li>Write Auth endpoints</li><li>Implement password hashing</li></ul>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 4 (June 04)</div>
+            <ul><li>Develop Project CRUD</li><li>GET & POST Routes</li></ul>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 5 (June 05)</div>
+            <ul><li>Run Postman Testing</li><li>Fix HTTP Status codes</li></ul>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 6 (June 06)</div>
+            <ul><li>Enable Flask-CORS</li><li>Cross-origin allowance</li></ul>
+        </div>
+        <div class="day-card">
+            <div class="day-num">Day 7 (June 07)</div>
+            <ul><li>Finalize Milestone 1</li><li>Integration Ready</li></ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

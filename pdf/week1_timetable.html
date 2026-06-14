@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<style>
+    @page {
+        size: A4;
+        margin: 15mm;
+        @bottom-right {
+            content: "Page 1 of 1";
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 8pt;
+            color: #a0aec0;
+        }
+    }
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        color: #2d3748;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        font-size: 10pt;
+    }
+    .header {
+        background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+    }
+    .header h1 { margin: 0; font-size: 16pt; font-weight: 700; letter-spacing: -0.5px; }
+    .header p { margin: 5px 0 0 0; font-size: 9.5pt; color: #ebf8ff; }
+    
+    .grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .col {
+        flex: 1;
+        background: #f7fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 12px;
+    }
+    .col-title {
+        font-size: 11pt;
+        font-weight: bold;
+        color: #2b6cb0;
+        border-bottom: 2px solid #3182ce;
+        padding-bottom: 5px;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+    }
+    .day-box {
+        background: white;
+        border: 1px solid #edf2f7;
+        border-radius: 4px;
+        padding: 8px 10px;
+        margin-bottom: 8px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .day-title {
+        font-weight: 700;
+        color: #2d3748;
+        font-size: 9.5pt;
+        margin-bottom: 3px;
+    }
+    .day-box ul {
+        margin: 0;
+        padding-left: 15px;
+        color: #4a5568;
+        font-size: 9pt;
+    }
+    .day-box li { margin-bottom: 2px; }
+    .tech-badge {
+        display: inline-block;
+        font-size: 7.5pt;
+        background: #ebf8ff;
+        color: #2b6cb0;
+        padding: 1px 5px;
+        border-radius: 3px;
+        font-weight: 600;
+        margin-top: 4px;
+    }
+    .note-box {
+        margin-top: 15px;
+        background: #fffaf0;
+        border-left: 4px solid #dd6b20;
+        padding: 10px;
+        border-radius: 0 4px 4px 0;
+        font-size: 9pt;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>WEEK 1: FULL-STACK BACK-END INITIATION TIMETABLE</h1>
+    <p>Target: Building the Core REST API & Database Architecture (June 01 - June 07)</p>
+</div>
+
+<div class="grid">
+    <!-- Phase 1 -->
+    <div class="col">
+        <div class="col-title">🔄 Phase 1: Environment & Setup</div>
+        
+        <div class="day-box">
+            <div class="day-title">Day 1 (June 01) - Architecture Design</div>
+            <ul>
+                <li>Database Schema එක ප්ලෑන් කිරීම (Tables: Users, Projects).</li>
+                <li>Python & Flask/FastAPI environment එක සකසා ගැනීම.</li>
+            </ul>
+            <span class="tech-badge">Python / Architecture</span>
+        </div>
+
+        <div class="day-box">
+            <div class="day-title">Day 2 (June 02) - Database Connectivity</div>
+            <ul>
+                <li>SQLAlchemy හෝ SQLite මඟින් Database එක සම්බන්ධ කිරීම.</li>
+                <li>පළමු DB Model එක (User Schema) ක්‍රියාත්මක කිරීම.</li>
+            </ul>
+            <span class="tech-badge">SQL / ORM</span>
+        </div>
+    </div>
+
+    <!-- Phase 2 -->
+    <div class="col">
+        <div class="col-title">🚀 Phase 2: Core API Development</div>
+        
+        <div class="day-box">
+            <div class="day-title">Day 3 (June 03) - Authentication API</div>
+            <ul>
+                <li>User Registration & Login Routes නිර්මාණය (POST Requests).</li>
+                <li>Password hashing (Werkzeug/bcrypt) ආරක්ෂාව එකතු කිරීම.</li>
+            </ul>
+            <span class="tech-badge">Flask API / Auth</span>
+        </div>
+
+        <div class="day-box">
+            <div class="day-title">Day 4 (June 04) - Project CRUD API</div>
+            <ul>
+                <li>වෙබ් අඩවියේ පෙන්වන දත්ත (Projects) එකතු කිරීමට සහ කියවීමට API සෑදීම.</li>
+                <li>GET & POST endpoints නිම කිරීම.</li>
+            </ul>
+            <span class="tech-badge">REST API</span>
+        </div>
+
+        <div class="day-box">
+            <div class="day-title">Day 5 (June 05) - API Testing</div>
+            <ul>
+                <li>Postman හෝ Insomnia භාවිතයෙන් සියලුම API Endpoints ටෙස්ට් කිරීම.</li>
+                <li>HTTP Status Codes (200, 201, 400, 404) නිවැරදිව සැකසීම.</li>
+            </ul>
+            <span class="tech-badge">Postman Testing</span>
+        </div>
+    </div>
+
+    <!-- Phase 3 -->
+    <div class="col">
+        <div class="col-title">🔗 Phase 3: Integration Ready</div>
+        
+        <div class="day-box">
+            <div class="day-title">Day 6 (June 06) - CORS Configuration</div>
+            <ul>
+                <li>Angular එකෙන් සර්වර් එකට එන Request බ්ලොක් නොවෙන්න Flask-CORS ඇතුළත් කිරීම.</li>
+            </ul>
+            <span class="tech-badge">CORS / Security</span>
+        </div>
+
+        <div class="day-box">
+            <div class="day-title">Day 7 (June 07) - Review & Document</div>
+            <ul>
+                <li>මුළු API එකම Angular Client-side එක සමඟ සම්බන්ධ කිරීමට සූදානම් කිරීම.</li>
+            </ul>
+            <span class="tech-badge">Milestone 1 Done</span>
+        </div>
+    </div>
+</div>
+
+<div class="note-box">
+    <strong>💡 Deneth, මෙන්න ඔයාගේ පළමු සතියේ සැලසුම:</strong> අපි කලින් කතා වුණා වගේ Server-side (කුස්සිය) ඇතුළේ වැඩ කෙරෙන ප්‍රධාන API එක සකස් කරගන්න එක තමයි මේ සතියේ අපේ Target එක. මේ සැලසුම බලාගෙන අද ඉඳන්ම වැඩේ පටන් ගමු!
+</div>
+
+</body>
+</html>
