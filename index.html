@@ -8,17 +8,23 @@
 </head>
 <body>
 
+    <div class="cyber-follower"></div>
+
     <div class="header">
         <img src="logo.png" alt="Deneth Logo" class="logo">
+        <nav class="nav-menu">
+            <a href="#about">About</a>
+            <a href="#tech">Tech Stack</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="contact-btn">Contact</a>
+        </nav>
     </div>
 
     <div class="profile-section">
-        
-        <div class="hero">
-            <h1>Hi there, <span>I'm Deneth Kawishka 💻</span></h1>
-            <p>An aspiring Software Engineer currently pursuing a Diploma in Software Engineering.<br> 
-            I love building clean, functional, and efficient applications while continuously expanding my technical skill set.</p>
-        </div>
+        <div class="hero" id="about">
+    <h1><span class="wave-text">Hi there</span> <span class="wave-emoji">👋</span>, <br><span class="typed-text" style="color: #ff4d4d;"></span><span class="cursor" style="color: #ff4d4d; animation: blink 0.7s infinite;">|</span></h1>
+    <p>I love building clean, functional, and efficient applications while continuously expanding my technical skill set.</p>
+</div>
         
         <div class="deneth-animation-container">
             <div class="deneth-animation">
@@ -31,15 +37,13 @@
             <div class="magic-icon icon-2"><img src="python.png" alt="Python"></div>
             <div class="magic-icon icon-3"><img src="js.png" alt="JS"></div>
             <div class="magic-icon icon-4"><img src="html.png" alt="HTML"></div>
-            <div class="magic-icon icon-5"><img src="cs.png" alt="HTML"></div>
-            <div class="magic-icon icon-6"><img src="c.png" alt="HTML"></div>
-              <div class="magic-icon icon-7"><img src="oop.png" alt="HTML"></div>
+            <div class="magic-icon icon-5"><img src="cs.png" alt="C#"></div>
+            <div class="magic-icon icon-6"><img src="c.png" alt="C"></div>
+            <div class="magic-icon icon-7"><img src="oop.png" alt="OOP"></div>
         </div>
-
     </div> 
 
     <div class="grid-container">
-        
         <div class="card">
             <h3>🚀 About Me</h3>
             <p><strong>🎓 Education:</strong> Diploma Student at NIBM Kurunegala</p>
@@ -48,59 +52,106 @@
             <p><strong>📧 Reach me:</strong> denethkawishka2008@gmail.com</p>
         </div>
 
-        <div class="card">
+        <div class="card" id="tech">
             <h3>🛠️ Tech Stack & Tools</h3>
-            
             <div class="tech-item">
                 <strong>Languages:</strong>
                 <span class="tech-group">
                     <img src="python.png" alt="Python" class="list-icon"> Python,
                     <img src="java.png" alt="Java" class="list-icon"> Java,
-                    <img src="C.png" alt="JavaScript" class="list-icon"> C
-                   <img src="cs.png" alt="JavaScript" class="list-icon"> C#
-
+                    <img src="C.png" alt="C" class="list-icon"> C,
+                    <img src="cs.png" alt="C#" class="list-icon"> C#
                 </span>
             </div>
-
             <div class="tech-item">
                 <strong>Web:</strong>
                 <span class="tech-group">
                     <img src="html.png" alt="HTML" class="list-icon"> HTML,
                     <img src="css.png" alt="CSS" class="list-icon"> CSS,
-                          <img src="js.png" alt="JavaScript" class="list-icon"> JavaScript,
-                    <img src="A.png" alt="Angular" class="list-icon"> Angular
-
+                    <img src="js.png" alt="JavaScript" class="list-icon"> JavaScript
                 </span>
             </div>
-
             <div class="tech-item">
-                <strong>Databases:</strong>
+                <strong>Databases/tools:</strong>
                 <span class="tech-group">
                     <img src="mysql.png" alt="MySQL" class="list-icon"> MySQL,
-                    <img src="sqlite.png" alt="SQLite" class="list-icon"> SQLite
+                    <img src="sqlite.png" alt="SQLite" class="list-icon"> SQLite,
+                    <img src="git.png" alt="Git" class="list-icon"> Git
                 </span>
             </div>
         </div>
 
-        <div class="card">
-            <h3>📂 Featured Projects</h3>
+        <div class="card" id="projects">
+            <h3 style="margin-bottom: 20px;">📂 Featured Projects</h3>
             
             <a href="https://github.com/denethkawishka2008-ui/POS-System" style="text-decoration: none;">
-                <div class="project">
-                    <h4>🛒 Point of Sale (POS) System</h4>
-                    <p>A desktop application built to streamline retail transactions. (Tech: Python)</p>
+                <div class="cyber-project">
+                    <h4 class="cyber-title">🛒 Point of Sale (POS) System</h4>
+                    <p class="cyber-desc">A desktop application built to streamline retail transactions. <span style="color: #ff0055; font-size: 12px; font-weight: bold;">(Tech: Python)</span></p>
                 </div>
             </a>
 
             <a href="https://github.com/denethkawishka2008-ui/Hardware-Inventory-System" style="text-decoration: none;">
-                <div class="project">
-                    <h4>🔧 Hardware Inventory System</h4>
-                    <p>Tailored for hardware stores to manage stock efficiently. (Tech: Java)</p>
+                <div class="cyber-project">
+                    <h4 class="cyber-title">🔧 Hardware Inventory System</h4>
+                    <p class="cyber-desc">Tailored for hardware stores to manage stock efficiently. <span style="color: #ff0055; font-size: 12px; font-weight: bold;">(Tech: Java)</span></p>
+                </div>
+            </a>
+
+            <a href="https://github.com/denethkawishka2008-ui/Trading-Journal-Multi-Manager" style="text-decoration: none;">
+                <div class="cyber-project">
+                    <h4 class="cyber-title">📊 Trading Journal Multi-Manager</h4>
+                    <p class="cyber-desc">
+                        🚀 From Practice to Mastery: As a Student I Built Trading Journal Multi-Manager for Aspiring Traders! 📊✨
+                        <br><br>
+                        <span style="display: block; margin-top: 5px;">
+                            <span style="color: #00f2fe; font-size: 11px; font-weight: bold; background: rgba(0, 242, 254, 0.1); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(0, 242, 254, 0.3); margin-right: 5px;">💻 FRONTEND</span> 
+                            <span style="color: #ff0055; font-size: 13px;">HTML5, CSS3 (Premium Cyberpunk Glow), Vanilla JavaScript</span>
+                        </span>
+                        <span style="display: block; margin-top: 5px;">
+                            <span style="color: #00f2fe; font-size: 11px; font-weight: bold; background: rgba(0, 242, 254, 0.1); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(0, 242, 254, 0.3); margin-right: 5px;">☁️ BACKEND & CLOUD</span> 
+                            <span style="color: #ff0055; font-size: 13px;">Firebase (Firestore & Storage), Google Cloud Platform</span>
+                        </span>
+                    </p>
                 </div>
             </a>
         </div>
-
     </div> 
 
+    <div class="contact-section" id="contact">
+        <h3>📬 Contact Me</h3>
+        <p>Let's connect! Feel free to reach out to me through any of the platforms below.</p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/deneth-kavishka-7a48173aa" target="_blank" class="contact-item">
+                <img src="linkedin.png" alt="LinkedIn"> LinkedIn
+            </a>
+            <a href="https://wa.me/94706716409" target="_blank" class="contact-item">
+                <img src="whatsapp.png" alt="WhatsApp"> WhatsApp
+            </a>
+            <a href="https://github.com/denethkawishka2008-ui" target="_blank" class="contact-item">
+                <img src="github.png" alt="GitHub"> GitHub
+            </a>
+            <a href="tel:+94706716409" target="_blank" class="contact-item">
+                <img src="contact.png" alt="Contact"> Contact
+            </a>
+            <a href="mailto:denethkawishka2008@gmail.com" class="contact-item">
+                <img src="email.png" alt="Email"> Email
+            </a>
+        </div>
+    </div>
+
+    <div class="binary-bg">
+        <div class="binary-column down">10101010101010101010</div>
+        <div class="binary-column down">01010101010101010101</div>
+        <div class="binary-column down">11001100110011001100</div>
+        <div class="binary-column up">00110011001100110011</div>
+        <div class="binary-column up">10101010101010101010</div>
+        <div class="binary-column right">1010101010101010</div>
+        <div class="binary-column right">0101010101010101</div>
+        <div class="binary-column left">1111000011110000</div>
+        <div class="binary-column left">0000111100001111</div>
+    </div>
+    <div class="binary-bg"></div>
+    <script src="script.js"></script>
 </body>
 </html>
